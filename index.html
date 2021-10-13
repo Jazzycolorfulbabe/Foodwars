@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Wars</title>
+    <style>
+      body {
+        background-color: rgb(250, 240, 248);
+      }
+      h1 {
+        text-align: center;
+        color: #6fdae7;
+        border: 1px solid rgb(175, 85, 175);
+        box-shadow: #6fdae7;
+        border-radius: 2px;
+      }
+      h2 {
+        text-align: center;
+        line-height: 50px;
+        color: black;
+      }
+      h3 {
+        text-align: center;
+        color: rgb(175, 85, 175);
+        text-decoration: purple;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border: 10px solid rgb(244, 211, 247);
+        border-radius: 15px;
+        border-style: dotted;
+      }
+      p {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0 0 12px;
+        color: black;
+      }
+      button {
+        display: block;
+        margin: auto;
+        background-color: rgb(175, 85, 175);
+        background: linear-gradient(20);
+        color: seashell;
+        border-radius: 15px;
+        width: 100px;
+        font-weight: bold;
+      }
+      button:hover {
+        color: rgb(175, 85, 175);
+        transition: 200ms;
+        background-color: seashell;
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      a {
+        display: block;
+        color: #62d5e4;
+        margin-top: 10px;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      li {
+        display: block;
+        text-align: center;
+        font: weight 20px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>How to cook like Sōma Yukihira!</h1>
+    <div>
+      <h2>
+        Cooking like the Food Wars master is not as hard as it looks. Just start
+        with a simple recipe!
+      </h2>
+    </div>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/446/original/download_%2825%29.jpg?1630526853"
+      alt="soma yukihira food wars"
+    />
+    <hr />
+    <h2>Lets start with a Furikake Rice Recipe</h2>
+    <br />
+    <h3>
+      <em><strong>Ingredients:</strong></em>
+    </h3>
+    <span>
+      <ul>
+        <li>Ginger</li>
+        <li>Sugar</li>
+        <li>Scallions</li>
+        <li>Olive oil</li>
+        <li>Chicken Wings</li>
+        <li>Sake</li>
+        <li>Soy Sauce</li>
+        <li>Water</li>
+        <li>Eggs</li>
+        <li>Onion</li>
+        <li>Mirin</li>
+        <li>Chicken Stock</li>
+        <li>Furikake</li>
+        <li>Nikogori</li>
+      </ul>
+    </span>
+    <p>
+      Heat sesame oil in frying pan and sauté chicken wings until golden brown
+      on both sides. Put items into a pot and turn on high until it boils. Skim
+      scum off top, reduce heat to low, and simmer until broth level is reduced
+      by half. Pour broth into a container to cool. Once cooled, place in
+      refrigerator to chill and harden. Debone chicken wings and cut into
+      strips. Make the egg curds. Crack eggs into bowl, add, and whisk. Pour
+      into frying pan on low heat, stirring rapidly to create the curds. Once
+      done, move to plate. Once hardens, remove from container and cut aspic
+      into 1cm x 1cm squares. Pour aspic, egg curds, and chicken strips over hot
+      rice. Sprinkle with diced spring onion and enjoy!
+    </p>
+    <a
+      href="https://www.crunchyroll.com/food-wars-shokugeki-no-soma/episode-2-god-tongue-678163"
+      target="_blank"
+    >
+      🍜 Learn more about the episode
+    </a>
+    <br />
+    <button>🍲More About Foodwars</button>
+  </body>
+  <script>
+    function learn() {
+      let streaming = prompt("What streaming service do you have?");
+
+      if (
+        streaming === "HBO" ||
+        streaming === "hbo" ||
+        streaming === "Hbo" ||
+        streaming === "Netflix" ||
+        streaming === "netflix" ||
+        streaming === "NETFLIX" ||
+        streaming === "Funimation" ||
+        streaming === "FUNIMATION" ||
+        streaming === "Crunchyroll" ||
+        streaming === "crunchyroll"
+      ) {
+        alert(
+          "Go look up Food Wars and start streaming the First episode!! 🍜"
+        );
+      } else {
+        alert("Go click to Learn More about the episode");
+      }
+    }
+
+    let button = document.querySelector("button");
+    button.addEventListener("click", learn);
+  </script>
+</html>
